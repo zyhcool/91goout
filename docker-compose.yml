@@ -1,0 +1,28 @@
+# 单体部署
+version: '3.7'
+services:
+  database:
+    image: mongo:bionic
+    restart: always
+    volumes:
+      - ~/data/db/91goout:/data/db
+    ports:
+      - 27018:27017
+    networks:
+      - 91goout-web-net
+  web:
+    build: .
+    image: 91goout
+    environment:
+      - NODE_ENV=prod
+    depends_on:
+      - database
+    volumes:
+      - /data/logs/91goout:/usr/src/91goout/logs
+    ports:
+      - 9191:9191
+    networks:
+      - 91goout-web-net
+networks:
+  91goout-web-net:
+    driver: bridge

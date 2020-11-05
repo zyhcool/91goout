@@ -1,0 +1,268 @@
+2020-11-05T05:59:44.916Z info: GET /api/account/update 200 164ms
+
+2020-11-05T06:00:38.355Z info: GET /api/account/update 200 148ms
+
+2020-11-05T06:01:26.182Z info: GET /api/account/update 200 149ms
+
+2020-11-05T06:02:15.097Z info: GET /api/account/update 200 161ms
+
+2020-11-05T06:06:42.622Z info: GET /api/account/update 200 180ms
+
+2020-11-05T06:08:16.096Z info: GET /api/account/update 200 208ms
+
+2020-11-05T06:09:18.319Z info: GET /api/account/update 200 524ms
+
+2020-11-05T06:10:16.751Z info: GET /api/account/update 200 645ms
+
+2020-11-05T06:43:39.850Z info: GET /api/account/update 200 743ms
+
+2020-11-05T06:44:22.752Z info: GET /api/account/update 200 505ms
+
+2020-11-05T06:53:50.496Z error: 
+⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m19[0m:[93m52[0m - [91merror[0m[90m TS2339: [0mProperty 'find' does not exist on type 'AccountService'.
+
+[7m19[0m         const accounts = await this.accountService.find({});
+[7m  [0m [91m                                                   ~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'saveOrCreate' does not exist on type 'AccountService'.
+
+[7m31[0m             await this.accountService.saveOrCreate(account, ['username'])
+[7m  [0m [91m                                      ~~~~~~~~~~~~[0m
+
+Error: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m19[0m:[93m52[0m - [91merror[0m[90m TS2339: [0mProperty 'find' does not exist on type 'AccountService'.
+
+[7m19[0m         const accounts = await this.accountService.find({});
+[7m  [0m [91m                                                   ~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'saveOrCreate' does not exist on type 'AccountService'.
+
+[7m31[0m             await this.accountService.saveOrCreate(account, ['username'])
+[7m  [0m [91m                                      ~~~~~~~~~~~~[0m
+
+    at Object.<anonymous> (E:\demo\91goout\src\controllers\accountController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\node_modules\source-map-support\source-map-support.js:547:25)
+    at Module.m._compile (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:57:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at require.extensions.<computed> (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:59:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at E:\demo\src\util\importClassesFromDirectories.ts:30:20
+    at Array.map (<anonymous>)
+    at Object.importClassesFromDirectories (E:\demo\src\util\importClassesFromDirectories.ts:29:10)
+    at createExecutor (E:\demo\src\index.ts:160:35)
+    at createServer (E:\demo\src\index.ts:146:5)
+    at Object.useKoaServer (E:\demo\src\index.ts:131:12)
+    at setupServer (E:\demo\91goout\src\server.ts:29:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+2020-11-05T06:55:23.011Z warn: GET /api/account/update 405 2ms
+
+2020-11-05T06:58:55.406Z info: GET /api/account/updateAll 200 204909ms
+
+2020-11-05T07:05:06.175Z info: GET /api/account/updateAll 200 206030ms
+
+2020-11-05T07:07:28.309Z error: 
+⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+
+Error: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+
+    at Object.<anonymous> (E:\demo\91goout\src\controllers\accountController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\node_modules\source-map-support\source-map-support.js:547:25)
+    at Module.m._compile (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:57:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at require.extensions.<computed> (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:59:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at E:\demo\src\util\importClassesFromDirectories.ts:30:20
+    at Array.map (<anonymous>)
+    at Object.importClassesFromDirectories (E:\demo\src\util\importClassesFromDirectories.ts:29:10)
+    at createExecutor (E:\demo\src\index.ts:160:35)
+    at createServer (E:\demo\src\index.ts:146:5)
+    at Object.useKoaServer (E:\demo\src\index.ts:131:12)
+    at setupServer (E:\demo\91goout\src\server.ts:29:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+2020-11-05T07:13:30.477Z error: 
+⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+Error: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+    at Object.<anonymous> (E:\demo\91goout\src\controllers\accountController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\node_modules\source-map-support\source-map-support.js:547:25)
+    at Module.m._compile (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:57:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at require.extensions.<computed> (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:59:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at E:\demo\src\util\importClassesFromDirectories.ts:30:20
+    at Array.map (<anonymous>)
+    at Object.importClassesFromDirectories (E:\demo\src\util\importClassesFromDirectories.ts:29:10)
+    at createExecutor (E:\demo\src\index.ts:160:35)
+    at createServer (E:\demo\src\index.ts:146:5)
+    at Object.useKoaServer (E:\demo\src\index.ts:131:12)
+    at setupServer (E:\demo\91goout\src\server.ts:29:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+2020-11-05T07:26:33.224Z error: 
+⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+Error: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+    at Object.<anonymous> (E:\demo\91goout\src\controllers\accountController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\node_modules\source-map-support\source-map-support.js:547:25)
+    at Module.m._compile (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:57:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at require.extensions.<computed> (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:59:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at E:\demo\src\util\importClassesFromDirectories.ts:30:20
+    at Array.map (<anonymous>)
+    at Object.importClassesFromDirectories (E:\demo\src\util\importClassesFromDirectories.ts:29:10)
+    at createExecutor (E:\demo\src\index.ts:160:35)
+    at createServer (E:\demo\src\index.ts:146:5)
+    at Object.useKoaServer (E:\demo\src\index.ts:131:12)
+    at setupServer (E:\demo\91goout\src\server.ts:29:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+2020-11-05T07:26:41.684Z error: 
+⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+Error: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+    at Object.<anonymous> (E:\demo\91goout\src\controllers\accountController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\node_modules\source-map-support\source-map-support.js:547:25)
+    at Module.m._compile (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:57:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at require.extensions.<computed> (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:59:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at E:\demo\src\util\importClassesFromDirectories.ts:30:20
+    at Array.map (<anonymous>)
+    at Object.importClassesFromDirectories (E:\demo\src\util\importClassesFromDirectories.ts:29:10)
+    at createExecutor (E:\demo\src\index.ts:160:35)
+    at createServer (E:\demo\src\index.ts:146:5)
+    at Object.useKoaServer (E:\demo\src\index.ts:131:12)
+    at setupServer (E:\demo\91goout\src\server.ts:29:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+2020-11-05T07:27:33.753Z error: 
+⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+Error: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m25[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAll' does not exist on type 'AccountService'.
+
+[7m25[0m         this.accountService.updateAll();
+[7m  [0m [91m                            ~~~~~~~~~[0m
+[96msrc/controllers/accountController.ts[0m:[93m31[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'updateAccounts' does not exist on type 'AccountService'.
+
+[7m31[0m         this.accountService.updateAccounts()
+[7m  [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+    at Object.<anonymous> (E:\demo\91goout\src\controllers\accountController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\node_modules\source-map-support\source-map-support.js:547:25)
+    at Module.m._compile (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:57:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at require.extensions.<computed> (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-7612138031582523.js:59:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at E:\demo\src\util\importClassesFromDirectories.ts:30:20
+    at Array.map (<anonymous>)
+    at Object.importClassesFromDirectories (E:\demo\src\util\importClassesFromDirectories.ts:29:10)
+    at createExecutor (E:\demo\src\index.ts:160:35)
+    at createServer (E:\demo\src\index.ts:146:5)
+    at Object.useKoaServer (E:\demo\src\index.ts:131:12)
+    at setupServer (E:\demo\91goout\src\server.ts:29:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+2020-11-05T07:29:28.255Z warn: GET /api/account/updateAccounts 405 2ms
+
+2020-11-05T07:29:39.338Z info: GET /api/account/updateNewAccount 200 6ms
+
