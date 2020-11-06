@@ -236,3 +236,44 @@ Error: ⨯ Unable to compile TypeScript:
     at setupServer (E:\demo\91goout\src\server.ts:29:5)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
 
+2020-11-06T03:18:30.474Z error: 
+账号不存在
+Error: 账号不存在
+    at OrderController.create (E:\demo\91goout\src\controllers\orderController.ts:31:19)
+    at ErrorHandler.use (E:\demo\91goout\src\middlewares\errorHandler.ts:10:13)
+    at bodyParser (E:\demo\91goout\node_modules\koa-bodyparser\index.js:82:48)
+    at bodyParser (E:\demo\91goout\node_modules\koa-bodyparser\index.js:95:5)
+    at E:\demo\91goout\src\logger.ts:52:9
+    at cors (E:\demo\91goout\node_modules\@koa\cors\index.js:56:32)
+
+2020-11-06T06:45:03.930Z error: 
+document must have an _id before saving
+MongooseError: document must have an _id before saving
+    at Timeout._onTimeout (E:\demo\91goout\node_modules\mongoose\lib\model.js:269:18)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+
+2020-11-06T07:07:03.148Z error: 
+action.response.send is not a function
+TypeError: action.response.send is not a function
+    at ResponseHandler.intercept (E:\demo\91goout\src\interceptors\responseHandler.ts:10:32)
+    at E:\demo\src\RoutingControllers.ts:174:96
+    at E:\demo\src\RoutingControllers.ts:148:47
+    at E:\demo\src\util\runInSequence.ts:9:20
+
+2020-11-06T07:11:19.446Z error: 
+action.response.send is not a function
+TypeError: action.response.send is not a function
+    at ResponseHandler.intercept (E:\demo\91goout\src\interceptors\responseHandler.ts:11:32)
+    at E:\demo\src\RoutingControllers.ts:174:96
+    at E:\demo\src\RoutingControllers.ts:148:47
+    at E:\demo\src\util\runInSequence.ts:9:20
+
+2020-11-06T07:11:44.218Z error: 
+action.response.send is not a function
+TypeError: action.response.send is not a function
+    at ResponseHandler.intercept (E:\demo\91goout\src\interceptors\responseHandler.ts:11:32)
+    at E:\demo\src\RoutingControllers.ts:174:96
+    at E:\demo\src\RoutingControllers.ts:148:47
+    at E:\demo\src\util\runInSequence.ts:9:20
+

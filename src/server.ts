@@ -12,6 +12,7 @@ import { cron } from "./cron";
 import { useKoaServer, Action, useContainer } from "routing-controllers";
 import { Container } from "typedi";
 import { dbConnect } from "./init/dbConnection";
+import jwt from "koa-jwt";
 const setupServer = async () => {
     // mongodb connection
     await dbConnect();
@@ -22,6 +23,15 @@ const setupServer = async () => {
     app.use(cors());
     app.use(loggerMid());
     app.use(bodyParser());
+    // app.use(jwt({
+    //     secret: 'fakesecret',
+    //     getToken: (ctx) => {
+    //         if (ctx.req.headers.authorization && ctx.req.headers.authorization.split(' ')[0] === "Bearer") {
+    //             return ctx.req.headers.authorization.split(' ')[1];
+    //         }
+    //         return null
+    //     }
+    // }).unless({ path: [/^\/login/] }))
 
 
     // init routing-controllers
@@ -41,7 +51,7 @@ const setupServer = async () => {
         },
 
         authorizationChecker: async (action: Action, permissions: string[]) => {
-            // TODO
+
             return true;
         },
     });

@@ -63,7 +63,7 @@ export class AccountService extends BaseService<Account>{
     }
 
     async updateAccounts() {
-
+        let newAccount = 0;
         for (let i = 0; i < 10 ** 3; i++) {
             const username = `${i}@qq.com`
             // 数据是否已经存在
@@ -76,7 +76,9 @@ export class AccountService extends BaseService<Account>{
                 continue;
             }
             console.log(account)
+            newAccount++
             await this.saveOrCreate(account, ['username'])
         }
+        return newAccount
     }
 }

@@ -266,3 +266,98 @@ Error: ⨯ Unable to compile TypeScript:
 
 2020-11-05T07:29:39.338Z info: GET /api/account/updateNewAccount 200 6ms
 
+2020-11-06T03:14:56.484Z info: GET /api/account/updateAll 200 9ms
+
+2020-11-06T03:18:30.475Z error: 
+账号不存在
+Error: 账号不存在
+    at OrderController.create (E:\demo\91goout\src\controllers\orderController.ts:31:19)
+    at ErrorHandler.use (E:\demo\91goout\src\middlewares\errorHandler.ts:10:13)
+    at bodyParser (E:\demo\91goout\node_modules\koa-bodyparser\index.js:82:48)
+    at bodyParser (E:\demo\91goout\node_modules\koa-bodyparser\index.js:95:5)
+    at E:\demo\91goout\src\logger.ts:52:9
+    at cors (E:\demo\91goout\node_modules\@koa\cors\index.js:56:32)
+
+2020-11-06T03:18:30.482Z info: POST /api/order 200 242ms
+
+2020-11-06T03:18:41.210Z info: POST /api/order 200 24ms
+
+2020-11-06T03:20:31.689Z info: POST /api/order 200 7ms
+
+2020-11-06T03:22:26.405Z info: POST /api/order 200 223ms
+
+2020-11-06T03:24:46.188Z info: GET /api/order 200 45ms
+
+2020-11-06T03:25:07.786Z info: GET /api/order 200 40ms
+
+2020-11-06T03:25:20.581Z info: GET /api/orders 200 8ms
+
+2020-11-06T03:25:56.405Z info: GET /api/order 200 48ms
+
+2020-11-06T03:27:27.272Z info: GET /api/order 200 67ms
+
+2020-11-06T03:28:51.187Z info: POST /api/order 200 67ms
+
+2020-11-06T03:29:51.277Z warn: POST /api/orders 405 18ms
+
+2020-11-06T03:30:05.534Z info: GET /api/orders 200 31ms
+
+2020-11-06T03:30:26.842Z info: GET /api/orders 200 61ms
+
+2020-11-06T06:21:52.843Z info: POST /api/order 200 69ms
+
+2020-11-06T06:26:28.958Z info: GET /api/orders?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 47ms
+
+2020-11-06T06:27:05.879Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 10ms
+
+2020-11-06T06:30:10.723Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 30ms
+
+2020-11-06T06:32:51.447Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 37ms
+
+2020-11-06T06:32:54.693Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 3ms
+
+2020-11-06T06:45:03.931Z error: 
+document must have an _id before saving
+MongooseError: document must have an _id before saving
+    at Timeout._onTimeout (E:\demo\91goout\node_modules\mongoose\lib\model.js:269:18)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+
+2020-11-06T06:45:03.934Z info: POST /api/order 200 61ms
+
+2020-11-06T06:46:21.385Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 60ms
+
+2020-11-06T07:07:03.148Z error: 
+action.response.send is not a function
+TypeError: action.response.send is not a function
+    at ResponseHandler.intercept (E:\demo\91goout\src\interceptors\responseHandler.ts:10:32)
+    at E:\demo\src\RoutingControllers.ts:174:96
+    at E:\demo\src\RoutingControllers.ts:148:47
+    at E:\demo\src\util\runInSequence.ts:9:20
+
+2020-11-06T07:07:03.154Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 76ms
+
+2020-11-06T07:11:19.447Z error: 
+action.response.send is not a function
+TypeError: action.response.send is not a function
+    at ResponseHandler.intercept (E:\demo\91goout\src\interceptors\responseHandler.ts:11:32)
+    at E:\demo\src\RoutingControllers.ts:174:96
+    at E:\demo\src\RoutingControllers.ts:148:47
+    at E:\demo\src\util\runInSequence.ts:9:20
+
+2020-11-06T07:11:19.455Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 229ms
+
+2020-11-06T07:11:44.219Z error: 
+action.response.send is not a function
+TypeError: action.response.send is not a function
+    at ResponseHandler.intercept (E:\demo\91goout\src\interceptors\responseHandler.ts:11:32)
+    at E:\demo\src\RoutingControllers.ts:174:96
+    at E:\demo\src\RoutingControllers.ts:148:47
+    at E:\demo\src\util\runInSequence.ts:9:20
+
+2020-11-06T07:11:44.266Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 107ms
+
+2020-11-06T07:27:14.715Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 55ms
+
+2020-11-06T07:28:23.988Z info: GET /api/order?orderId=535c0d2cb1f044e7bcf771eabd71459a 200 42ms
+

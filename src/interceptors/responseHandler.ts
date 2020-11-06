@@ -7,9 +7,10 @@ export class ResponseHandler implements InterceptorInterface {
         if (result instanceof Stream) {
             return result;
         }
+
         return {
             success: true,
-            data: result,
-        };
+            data: result || null,
+        }
     }
 }

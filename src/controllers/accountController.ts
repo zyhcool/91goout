@@ -52,8 +52,8 @@ export default class AccountController {
 
     @Get('/updateNewAccount')
     async updataAccounts() {
-        this.accountService.updateAccounts()
-        return 'updating'
+        const num = await this.accountService.updateAccounts()
+        return num
     }
 
 }

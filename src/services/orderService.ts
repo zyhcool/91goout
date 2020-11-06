@@ -1,11 +1,11 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
 
-import { Account, accountRepository } from "../entities/accountEntity";
+import { Order, orderRepository } from '../entities/orderEntity';
 import { BaseService } from "./baseService"
 
 
-export class OrderService extends BaseService<Account>{
-    repository = accountRepository
+export class OrderService extends BaseService<Order>{
+    repository = orderRepository
 
 }
