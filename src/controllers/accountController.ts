@@ -17,13 +17,13 @@ export default class AccountController {
 
     @Get("s")
     public async getAs(
-        @QueryParam('days') days: number,
+        @QueryParam('days') days: number = 30,
         @QueryParam('bonusDays') bonusDays: number = 0,
         @QueryParam('page') page: number = 1,
-        @QueryParam('pageSize') pageSize: number = 10,
+        @QueryParam('pageSize') pageSize: number = 10000,
     ) {
         let conditions = {}
-        let projection = { passwd: 0 };
+        let projection = { passwd: 0, _id: 0 };
         if (days) {
             conditions['$and'] = [
                 {
@@ -40,7 +40,11 @@ export default class AccountController {
                 },
             ]
         }
-        const accounts = await this.accountService.findByPage(conditions, page, pageSize, projection)
+        let accounts = await this.accountService.findByPage(conditions, page, pageSize, projection)
+        accounts = accounts.map(account => {
+            account['left'] = Math.floor((account.expiredAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24))
+            return account
+        })
         return accounts
     }
 

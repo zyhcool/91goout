@@ -277,3 +277,62 @@ TypeError: action.response.send is not a function
     at E:\demo\src\RoutingControllers.ts:148:47
     at E:\demo\src\util\runInSequence.ts:9:20
 
+2020-12-22T08:10:49.273Z error: 
+⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m44[0m:[93m9[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'accounts' because it is a constant.
+
+[7m44[0m         accounts = accounts.map(account => {
+[7m  [0m [91m        ~~~~~~~~[0m
+
+Error: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/accountController.ts[0m:[93m44[0m:[93m9[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'accounts' because it is a constant.
+
+[7m44[0m         accounts = accounts.map(account => {
+[7m  [0m [91m        ~~~~~~~~[0m
+
+    at Object.<anonymous> (E:\demo\91goout\src\controllers\accountController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\node_modules\source-map-support\source-map-support.js:547:25)
+    at Module.m._compile (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-8354944394254009.js:57:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at require.extensions.<computed> (C:\Users\bnqkl\AppData\Local\Temp\ts-node-dev-hook-8354944394254009.js:59:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\bnqkl\AppData\Roaming\npm\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at E:\demo\src\util\importClassesFromDirectories.ts:30:20
+    at Array.map (<anonymous>)
+    at Object.importClassesFromDirectories (E:\demo\src\util\importClassesFromDirectories.ts:29:10)
+    at createExecutor (E:\demo\src\index.ts:160:35)
+    at createServer (E:\demo\src\index.ts:146:5)
+    at Object.useKoaServer (E:\demo\src\index.ts:131:12)
+    at setupServer (E:\demo\91goout\src\server.ts:39:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+2020-12-22T10:34:22.538Z error: 
+Given parameter days is invalid. Value ("") cannot be parsed into number.
+Error: 
+    at InvalidParamError.HttpError [as constructor] (E:\demo\src\http-error\HttpError.ts:19:22)
+    at InvalidParamError.BadRequestError [as constructor] (E:\demo\src\http-error\BadRequestError.ts:10:9)
+    at new InvalidParamError (E:\demo\src\error\ParamNormalizationError.ts:10:9)
+    at ActionParameterHandler.normalizeStringValue (E:\demo\src\ActionParameterHandler.ts:160:27)
+    at ActionParameterHandler.<anonymous> (E:\demo\src\ActionParameterHandler.ts:137:33)
+    at step (E:\demo\91goout\node_modules\routing-controllers\ActionParameterHandler.js:44:23)
+    at Object.next (E:\demo\91goout\node_modules\routing-controllers\ActionParameterHandler.js:25:53)
+    at E:\demo\91goout\node_modules\routing-controllers\ActionParameterHandler.js:19:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\demo\91goout\node_modules\routing-controllers\ActionParameterHandler.js:15:12)
+    at ActionParameterHandler.normalizeParamValue (E:\demo\91goout\node_modules\routing-controllers\ActionParameterHandler.js:135:16)
+    at ActionParameterHandler.handle (E:\demo\src\ActionParameterHandler.ts:45:28)
+    at E:\demo\src\RoutingControllers.ts:115:49
+    at Array.map (<anonymous>)
+    at RoutingControllers.executeAction (E:\demo\src\RoutingControllers.ts:115:14)
+    at E:\demo\src\RoutingControllers.ts:83:33
+    at routeHandler (E:\demo\src\driver\koa\KoaDriver.ts:132:20)
+    at dispatch (E:\demo\91goout\node_modules\koa-compose\index.js:42:32)
+    at Route.handler (E:\demo\91goout\node_modules\koa-compose\index.js:34:12)
+    at Route.call (E:\demo\91goout\node_modules\koa-router\lib\route.js:50:17)
+    at invokeRoute (E:\demo\91goout\node_modules\koa-router\lib\router.js:633:25)
+    at dispatch (E:\demo\91goout\node_modules\koa-compose\index.js:42:32)
+
