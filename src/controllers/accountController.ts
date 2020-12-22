@@ -23,7 +23,7 @@ export default class AccountController {
         @QueryParam('pageSize') pageSize: number = 10000,
     ) {
         let conditions = {}
-        let projection = { username: 1, expiredAt: 1 };
+        let projection = { _id: 0, passwd: 0, updatedAt: 0, createdAt: 0 };
         if (days) {
             conditions['$and'] = [
                 {
