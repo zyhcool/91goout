@@ -21,9 +21,9 @@ export abstract class BaseService<T> {
         return await this.repository.create(data)
     }
 
-    async update(conditions: any, doc: any) {
-        return await this.repository.update(conditions, doc);
-    }
+    // async update(conditions: any, doc: any) {
+    //     return await this.repository.update(conditions, doc);
+    // }
 
     async saveOrCreate(doc, filterFields: Array<string>) {
         const conditions = {}

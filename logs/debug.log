@@ -15116,3 +15116,69 @@ Error:
 
 2020-12-22T10:45:22.933Z info: GET /api/accounts?days=30&bonusDays=0&page=1&pageSize=20 200 45ms
 
+2020-12-22T13:34:05.561Z info: GET /api/accounts?days=30&bonusDays=0&page=1&pageSize=20 200 50ms
+
+2020-12-22T13:34:59.379Z info: GET /api/account/updateAll 200 20ms
+
+2020-12-22T13:53:50.976Z info: GET /api/accounts?days=30&bonusDays=0&page=1&pageSize=20 200 68ms
+
+2020-12-22T13:54:16.610Z info: GET /api/accounts?days=30&bonusDays=0&page=1&pageSize=20 200 10ms
+
+2020-12-22T13:56:33.175Z info: GET /api/accounts?days=30&bonusDays=0&page=1&pageSize=20 200 10ms
+
+2020-12-22T13:57:04.523Z info: GET /api/accounts?days=30&bonusDays=0&page=1&pageSize=20 200 9ms
+
+2020-12-22T13:59:16.463Z info: GET /api/accounts?days=30&bonusDays=0&page=1&pageSize=20 200 10ms
+
+2020-12-22T14:12:37.856Z info: GET /api/accounts?days=130&bonusDays=0&page=1&pageSize=20 200 34ms
+
+2020-12-22T15:39:49.169Z info: GET /api/accounts?days=130&bonusDays=0&page=1&pageSize=200000 200 43ms
+
+2021-04-25T14:25:19.864Z info: GET /api/accounts?days=10000&bonusDays=0&page=1&pageSize=200000 200 175ms
+
+2021-04-25T14:25:54.353Z info: GET /api/accounts?days=90&bonusDays=0&page=1&pageSize=200000 200 8ms
+
+2021-04-25T14:26:18.583Z info: GET /api/account/updateAll 200 19ms
+
+2021-04-25T14:49:29.961Z info: GET /api/accounts?days=120&bonusDays=0&page=1&pageSize=200000 200 56ms
+
+2021-04-25T14:49:46.569Z info: GET /api/accounts?days=90&bonusDays=0&page=1&pageSize=200000 200 7ms
+
+2021-04-25T14:53:41.607Z info: GET /api/accounts?days=90&bonusDays=0&page=1&pageSize=200000 200 9ms
+
+2021-04-25T15:00:11.104Z info: GET /api/accounts?days=90&bonusDays=0&page=1&pageSize=200000 200 368ms
+
+2021-04-25T15:01:04.550Z info: GET /api/accounts?days=200&bonusDays=0&page=1&pageSize=200000 200 9ms
+
+2021-04-25T15:02:30.997Z error: 
+Given parameter days is invalid. Value ("") cannot be parsed into number.
+Error
+    at InvalidParamError.HttpError [as constructor] (E:\projects\91goout\node_modules\routing-controllers\http-error\HttpError.js:30:23)
+    at InvalidParamError.BadRequestError [as constructor] (E:\projects\91goout\node_modules\routing-controllers\http-error\BadRequestError.js:23:28)
+    at new InvalidParamError (E:\projects\91goout\node_modules\routing-controllers\error\ParamNormalizationError.js:23:28)
+    at ActionParameterHandler.normalizeStringValue (E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:198:27)
+    at ActionParameterHandler.<anonymous> (E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:173:64)
+    at step (E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:44:23)
+    at Object.next (E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:25:53)
+    at E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:19:71
+    at new Promise (<anonymous>)
+    at __awaiter (E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:15:12)
+    at ActionParameterHandler.normalizeParamValue (E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:135:16)
+    at ActionParameterHandler.handle (E:\projects\91goout\node_modules\routing-controllers\ActionParameterHandler.js:84:26)
+    at E:\projects\91goout\node_modules\routing-controllers\RoutingControllers.js:94:67
+    at Array.map (<anonymous>)
+    at RoutingControllers.executeAction (E:\projects\91goout\node_modules\routing-controllers\RoutingControllers.js:94:14)
+    at E:\projects\91goout\node_modules\routing-controllers\RoutingControllers.js:64:34
+    at routeHandler (E:\projects\91goout\node_modules\routing-controllers\driver\koa\KoaDriver.js:177:20)
+    at dispatch (E:\projects\91goout\node_modules\koa-compose\index.js:42:32)
+    at Route.handler (E:\projects\91goout\node_modules\koa-compose\index.js:34:12)
+    at Route.call (E:\projects\91goout\node_modules\koa-router\lib\route.js:50:17)
+    at invokeRoute (E:\projects\91goout\node_modules\koa-router\lib\router.js:633:25)
+    at dispatch (E:\projects\91goout\node_modules\koa-compose\index.js:42:32)
+
+2021-04-25T15:02:31.029Z info: GET /api/accounts?days=&bonusDays=0&page=1&pageSize=200000 200 37ms
+
+2021-04-25T15:03:50.795Z info: GET /api/accounts?days=10000000&bonusDays=0&page=1&pageSize=200000 200 11ms
+
+2021-04-25T16:00:00.038Z debug: Executing cron job once every day
+

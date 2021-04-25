@@ -42,7 +42,9 @@ export default class AccountController {
         }
         let accounts = await this.accountService.findByPage(conditions, page, pageSize, projection)
         accounts = accounts.map(account => {
-            account['left'] = Math.floor((account.expiredAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24))
+            const left = (account.expiredAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24)
+            account['left'] = Math.floor(left)
+            account['price'] = Math.floor((20 / 30) * left)
             return account
         })
         return accounts
